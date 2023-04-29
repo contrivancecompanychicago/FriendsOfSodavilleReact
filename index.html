@@ -4,6 +4,12 @@
     <script src='https://js.sentry-cdn.com/dfd2ef188a1a4d3982c4429e6df5e59b.min.js' crossorigin="anonymous"></script>    
     <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
     <style>
+      <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>    
     </style>
     <title>Friends of Sodaville</title>
     </head>
@@ -11,5 +17,23 @@
     <h1>Friends of Sodaville</h1>
     <script>
     </script>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1275043013118620',
+      xfbml      : true,
+      version    : 'v16.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>  
   </body>
 </html>
